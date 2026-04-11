@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Fox Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-green: #2D6A4F;
+            --light-green: #D8F3DC;
+            --dark-slate: #1B4332;
+            --bg-color: #F8F9FA;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: var(--bg-color);
+            font-family: 'Inter', sans-serif;
+            color: var(--dark-slate);
+        }
+
+        .container {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .logo-wrapper {
+            width: 180px;
+            margin: 0 auto 1.5rem;
+            filter: drop-shadow(0 10px 15px rgba(45, 106, 79, 0.2));
+        }
+
+        h1 {
+            font-weight: 600;
+            letter-spacing: -1px;
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        p {
+            font-weight: 300;
+            color: #666;
+            margin-top: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        /* The Stylized Green Fox SVG */
+        .fox-svg {
+            width: 100%;
+            height: auto;
+            fill: var(--primary-green);
+        }
+
+        .accent-bar {
+            width: 40px;
+            height: 4px;
+            background: var(--primary-green);
+            margin: 2rem auto;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="logo-wrapper">
+            <svg class="fox-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <path d="M50 90C20 90 10 70 10 50C10 30 30 10 50 10L90 50L50 90Z" opacity="0.2" />
+                <path d="M50 20L85 55L50 90L15 55L50 20Z" />
+                <path d="M30 35L15 10L45 30L30 35Z" />
+                <path d="M70 35L85 10L55 30L70 35Z" />
+                <circle cx="50" cy="85" r="3" fill="#1B4332"/>
+            </svg>
+        </div>
+
+        <h1>Green Fox</h1>
+        <p>Clever solutions. Sustainable growth.</p>
+        
+        <div class="accent-bar"></div>
+    </div>
+
+</body>
+</html>
